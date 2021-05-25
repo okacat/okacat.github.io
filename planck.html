@@ -1,0 +1,129 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>okacat</title>
+    <meta name="description" content="a personal webpage of Oskar Korošec">
+    <meta name="author" content="Oskar Korošec">
+
+    <link rel="stylesheet" href="resources/normalize.css">
+    <link rel="stylesheet" href="resources/styles.css">
+    <link rel="stylesheet" href="resources/font-styles.css">
+</head>
+
+<body>
+    <header>
+        <div id="logo"><a href="index.html">okacat</a></div>
+    </header>
+
+    <main class=article>
+        <h1>Planck keyboard</h1>
+
+<p>
+    When I bought a mechanical keyboard a few years ago, I told myself this is the last keyboard I'll need. 
+    Then a friend told me about homemade keyboards and it didn't take long for me to tumble down the rabbit hole.
+</p>
+
+<p>
+    It took me a while, but in the end, I decided on a Planck. 
+    A keyboard with only 60% of the keys of a regular keyboard. 
+    The idea behind small keyboards is that you don't have to move your hands as much since all of the keys are in reach. 
+    The "missing keys" are then located on layers, which you access with the "LOWER" and "UPPER" keys. 
+    For example, on most Planck layouts, pressing "LOWER" and "Q" produces a "1", and pressing "UPPER" and "Q" produces an "!". 
+    The layers are fully customizable of course.
+</p>
+
+<figure>
+    <img src="photos/planck/finished.jpg"/>
+    <figcaption>Finished keyboard</figcaption>
+</figure>
+
+<p>
+    My main usage is programming, so the biggest changes I did from a vanilla Planck layout, was that I moved the enter key to be on the thumb, not the pinky, and I also moved the arrow keys to be on a "LOWER" layer on "DXCV" keys. 
+    That actually helped a lot with the pain caused from bending my wrist in a weird way when using the regular arrow keys a lot.
+</p>
+
+<p>
+    Depending on the keyboard you choose to build, there are different levels of <i>DIY-ness</i>. 
+    Ranging from kits, some requiring no soldering, to making everything but the switches and keycaps yourself. 
+    I went for the middle ground: buy a base plate, then wire the switches and make the case myself. 
+</p>
+
+<p>Parts:</p>
+<ul>
+    <li>Ice Cap SA keycaps</li>
+    <li>Zealio purple switches</li>
+    <li>Planck steel baseplate</li>
+    <li>Arduino Pro Micro</li>
+    <li>Wooden cutting board for the case</li>
+</ul>
+
+
+<p>
+    The first step was to wire the switches into a matrix. 
+    There are detailed guides out there on how to do this, so I won't go into detail here. 
+    The process was was easier than expected, it just took a while. 
+    Connecting the rows is very easy with the long wires of the diodes. 
+    For the columns I needed to prepare short pieces of wire, making a template sped the process up.
+</p>
+
+<figure>
+    <img src="photos/planck/matrix_wired_closeup.jpg"/>
+    <figcaption>The switches wired into a matrix</figcaption>
+</figure>
+
+</br>
+
+<figure>
+    <img src="photos/planck/wire_template.jpg"/>
+    <figcaption>A template helped with preparing the wires</figcaption>
+</figure>
+
+<p>
+    When the switches were connected into a matrix, I could solder the Arduino connections, flash it with QMK firmware, and test that it works. 
+</p>
+
+<figure>
+    <img src="photos/planck/wired_arduino.jpg"/>
+    <figcaption>Arduino ProMicro soldered on</figcaption>
+</figure>
+
+</br>
+
+<figure>
+    <img src="photos/planck/keycaps_on.jpg"/>
+    <figcaption>Blank keycaps used for the first iteration</figcaption>
+</figure>
+
+<p>
+    The last part of the build was making a case. 
+    Finding the right wood wasn't easy as we needed a plank of hardwood that's also roughly the correct thickness. 
+    Luckily we found discounted cutting boards made out of acacia wood.
+    My friend was a member of a local maker space where we could CNC the wood.
+</p>
+
+<p>
+    After a while, I ordered the Ice Cap SA keycaps to replace the blank ones.
+    They were a bit pricey, but hey, this is the last keyboard I'll ever need, <a href="https://www.reddit.com/r/MechanicalKeyboards/comments/2ycoxz/what_is_your_end_game_keyboard/cp8e4wv?utm_source=share&utm_medium=web2x&context=3">right?</a>
+</p>
+
+<figure>
+    <img src="photos/planck/finished_topdown.jpg"/>
+    <figcaption>Ice Cap SE keycaps</figcaption>
+</figure>
+
+    </main>
+
+    <footer>
+        <div id="copyright">
+            
+            <span id="copyright">Oskar Korošec © 2021</span>
+        </div>
+    </footer>
+</body>
+
+</html>

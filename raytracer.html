@@ -1,0 +1,98 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>okacat</title>
+    <meta name="description" content="a personal webpage of Oskar Korošec">
+    <meta name="author" content="Oskar Korošec">
+
+    <link rel="stylesheet" href="resources/normalize.css">
+    <link rel="stylesheet" href="resources/styles.css">
+    <link rel="stylesheet" href="resources/font-styles.css">
+</head>
+
+<body>
+    <header>
+        <div id="logo"><a href="index.html">okacat</a></div>
+    </header>
+
+    <main class=article>
+        <h1>Raytracer</h1>
+
+<p>
+As a kid, I had an old version of 3dsmax on my computer I could play around with and use to make some basic renders.
+3D graphics seemed like <i>pure magic</i>.
+I didn't understand how any of it worked, I just followed an online tutorial and placed some lights, hit "render", and waited for the pretty picture to appear.
+</p>
+
+<p>
+Years later I realized that people actually make simple renderers completely from scratch.
+Ever since then I really wanted to write one myself.
+I stumbled upon a great book, <a href="https://raytracing.github.io/books/RayTracingInOneWeekend.html">Ray Tracing in One Weekend </a> by Peter Shirley, and it was the perfect excuse to finally do it.
+</p>
+
+<p>
+I chose Go as I've been wanting to try it for a while. 
+It has a built-in concurrency model, which worked great for an <a href="https://en.wikipedia.org/wiki/Embarrassingly_parallel">embarrassingly parallel</a> problem such as ray tracing. 
+I like the language in general, it was easy to get started with it and they have a nice tour of it on <a href="https://tour.golang.org/welcome">https://tour.golang.org</a>.
+</p>
+
+<p>
+I'm pretty happy with the results, seeing images appear from code you've written is always exciting.
+Of course, there are a million things that I'd like to add and improve, but this was meant as just a fun exercise.
+</p>
+
+<p>
+I added an <code>.obj</code> parser to it, so I was able to load and render simple triangulated scenes. 
+But as I made absolutely no attempts at optimizing things, any scene with more than a few triangles renders painfully slow.
+</p>
+
+<p>
+The code is available on <a href="https://github.com/okacat/raytracer-go">Github</a>.
+</p>
+
+<p>
+Here are the results:
+</p>
+
+<figure>
+    <img src="photos/raytracer/cornell_box.png"/>
+    <figcaption>Cornell box</figcaption>
+</figure>
+
+</br>
+
+<figure>
+    <img src="photos/raytracer/pyramid.png"/>
+    <figcaption>A pyramid and some pillars (but look at that depth-of-field)</figcaption>
+</figure>
+
+</br>
+
+<figure>
+    <img src="photos/raytracer/sphere.png"/>
+    <figcaption>A sphere (or a planet, with a slight stretch of imagination)</figcaption>
+</figure>
+
+</br>
+
+<figure>
+    <img src="photos/raytracer/stairs.png"/>
+    <figcaption>A basement scene to test a small light source, took forever to render</figcaption>
+</figure>
+
+    </main>
+
+    <footer>
+        <div id="copyright">
+            
+            <span id="copyright">Oskar Korošec © 2021</span>
+        </div>
+    </footer>
+</body>
+
+</html>

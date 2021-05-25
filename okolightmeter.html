@@ -1,0 +1,94 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>okacat</title>
+    <meta name="description" content="a personal webpage of Oskar Korošec">
+    <meta name="author" content="Oskar Korošec">
+
+    <link rel="stylesheet" href="resources/normalize.css">
+    <link rel="stylesheet" href="resources/styles.css">
+    <link rel="stylesheet" href="resources/font-styles.css">
+</head>
+
+<body>
+    <header>
+        <div id="logo"><a href="index.html">okacat</a></div>
+    </header>
+
+    <main class=article>
+        <h1>OKO Light Meter</h1>
+
+<a href='https://play.google.com/store/apps/details?id=com.okacat.lightmeter&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img id="google-play-badge" alt='Get it on Google Play' src='../resources/media/google-play-badge.png'/></a>
+
+<p>
+Ah yes, <i>the mobile developer's rite of passage</i>- making your own app.
+I was starting to get intro Android development professionally and there was a lot to learn, and a lot of new technologies popping up (as it always is)s.
+What better way to learn and try out the new tech than to write an app?
+</p>
+
+<p>
+I wanted to pick an idea that wasn't too big, as I had enough unfinished projects on my hard drive anyway. 
+Being interested in film photography, the idea of making a light meter app came to mind.
+A lot of the old analog cameras don't have light meters, or they stopped working, so having a way to measure light really helps when picking the settings on the camera.
+There was a couple of solutions on the Play Store already, but I thought I could make one that's easier to use.
+</p>
+
+<p>
+The use case of the app was that you can measure the amount of light hitting the built-in sensor on the phone, and using that determine the settings you need to use on your camera.
+I designed the interface based on the assumption that the user would be familiar with how a film camera works.
+Setting your desired shutter speed or aperture is done with a virtual wheel you can spin, and the suggested setting updates automatically.
+That seemed reasonable enough to pull off, and hopefully useful for some people as well. 
+</p>
+
+<p>
+The result is <a href="https://play.google.com/store/apps/details?id=com.okacat.lightmeter">OKO Light Meter</a>.
+The name comes from Slovenian where "oko" means "an eye".
+All in all, I'm pretty happy with how it turned out. 
+It's got over 10.000 downloads and still has over 3000 unique daily users 4 years later.
+It might not sound like much, but for a niche app like a light meter, I don't think is bad at all.
+I haven't advertised the app anywhere either, would have been a good idea to at least post about it on Reddit or someplace.
+</p>
+
+<p>
+The app icon resembles the white dome on real light meter devices. 
+It's very material design inspired, and it was simple enough for me to actually make.
+</p>
+
+<figure>
+    <img src="../resources/media/oko_app_icon.png"/>
+</figure>
+
+<p>
+The main screen of the app shows the suggested setting in the middle, and on the bottom, the user can set their film ISO value and in this case the aperture.
+The button with an up and down arrow switches between setting the aperture and measuring for shutter speed or the other way around.
+</p>
+
+<figure>
+    <img src="photos/oko/oko_main_screen.jpg"/>
+</figure>
+
+<p>
+There is also a side drawer that lets the user pick a light value based on descriptions instead of measuring it.
+This is useful in cases when there is little light and the light meter becomes too imprecise to be useful.
+</p>
+
+<figure>
+    <img src="photos/oko/oko_sidebar.jpg"/>
+</figure>
+
+    </main>
+
+    <footer>
+        <div id="copyright">
+            
+            <span id="copyright">Oskar Korošec © 2021</span>
+        </div>
+    </footer>
+</body>
+
+</html>

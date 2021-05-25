@@ -1,0 +1,161 @@
+html, body {
+    max-width: 100%;
+    min-height: 100%;
+    height: fit-content;
+}
+
+body {
+    line-height: 1.6;
+    font-size: 18px;
+    color: #444;
+    font-family: "Source Sans Pro", sans-serif;
+    margin: 0;
+}
+
+h1, h2, h3 {
+    line-height: 1.2
+}
+
+figure {
+    margin: 0px;
+}
+
+figcaption {
+    font-style: italic;
+}
+
+footer {
+    display: flex;
+    flex: 1;
+    margin: 10px;
+    margin-top: 50px;
+    font-size: 14px;
+}
+
+audio {
+    margin-top: 20px;
+    margin-bottom: 20px;   
+}
+
+blockquote {
+    font-style: italic;
+    margin: 40px;
+}
+
+.article {
+    max-width: 650px;
+    margin-top: 40px;
+    margin-bottom: 120px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    /* font-family: "Source Serif Pro", serif; */
+}
+
+.gallery {
+    max-width: 1000px;
+}
+
+.article img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+    max-height: 90vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.gallery img {
+    margin-bottom: 35px;
+}
+
+.date {
+    font-style: italic;
+}
+
+.nav-header {
+    font-weight: bold;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.nav-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.nav-list li {
+    margin-top: 10px;
+}
+
+.nav-list a {
+    /* font-weight: lighter; */
+    color: #444;
+    text-decoration: none;
+}
+
+.nav-list a:hover {
+    color: #78AB46;
+}
+
+#logo {
+    font-size: 24px;
+    margin-left: 40px;
+    margin-top: 40px;
+}
+
+#logo>a {
+    text-decoration: none;
+    color: #444;
+}
+
+@media only screen and (max-width: 1000px) {
+    #logo {
+        margin-left: 20px;
+        margin-top: 20px;
+    }
+  }
+
+#landing-body {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    min-height: 100vh;
+}
+
+#landing-image {
+    flex: 1 1 0;
+}
+
+#landing-image>img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+#sidemenu {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    min-width: 320px;
+    width: fit-content;
+}
+
+#sidemenu>nav {
+    margin-left: 40px;
+}
+
+#copyright {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    align-self: flex-end;
+}
+
+#google-play-badge {
+    max-width: 150px;
+    margin: 0;
+}

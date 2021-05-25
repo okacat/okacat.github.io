@@ -1,0 +1,99 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>okacat</title>
+    <meta name="description" content="a personal webpage of Oskar Korošec">
+    <meta name="author" content="Oskar Korošec">
+
+    <link rel="stylesheet" href="resources/normalize.css">
+    <link rel="stylesheet" href="resources/styles.css">
+    <link rel="stylesheet" href="resources/font-styles.css">
+</head>
+
+<body>
+    <header>
+        <div id="logo"><a href="index.html">okacat</a></div>
+    </header>
+
+    <main class=article>
+        <h1>Intersection</h1>
+
+<a href="http://ludumdare.com/compo/ludum-dare-32/?action=preview&uid=50577">Link to the game on Ludum Dare</a>
+
+</br>
+
+<a href="https://github.com/okacat/IntersectionLD32">Link to code on Github</a>
+
+<p>
+Intersection is a game I made for the Ludum Dare in 2015.
+Ludum Dare is a great game jam where a theme gets announced early on Saturday and then you have 48 hours to make your game.
+This was Ludum Dare 32, and the theme was <i>An unconventional weapon</i>.
+My idea was that you are in control of traffic lights at an intersection and you have to smash the tinted cars by crashing them with other vehicles.
+</p>
+
+<p>
+Ludum Dare is a mostly online event, so I was just coding on the game from my dorm room.
+There are always people streaming and posting screenshots on Twitter though, so you get a cosy feeling that you're not alone.
+If you're from a bigger city, there's probably a meet-up organized as well, so you can meet the other jammers.
+After the jam itself, there is a voting period for a week or two, where you get to play other people's games and other people play your game as well!
+It's a fantastic experience and I'd definitely recommend it to anyone interested.
+</p>
+
+<p>
+The game I made is played with the <code>A</code> and <code>S</code> keys only, each turning the lights green on their respective road.
+If you turn both of the lights green, the cars will start to crash.
+The goal is to crash the cars painted black, as you get points for that, but you lose points for crashing the rest.
+If two cars crash they both get destroyed, if a car crashed with a truck only the car gets destroyed.
+The trick then is to try to crash two tinted cars, two tinted trucks, or a regular truck with a black car.
+Of course, things don't always go to plan, so you have to determine if it's worth losing some points to maybe be able to get them back from cars later in the queue.
+</p>
+
+<figure>
+    <img src="photos/intersection/intersection_game.jpg"/>
+    <figcaption>Gameplay - some cars queued up</figcaption>
+</figure>
+
+<p>
+It was a great exercise as I had to make the 3D models and the UI myself as well, so I opted for a "clean" geometric look.
+The problem was the music. I have absolutely <i>zero</i> ability to make any kind of music apart from beating a stick on a rock.
+Luckily I found a utility called <code>autotracker.py</code> that generates music for you through a good bit of magic. 
+The result was unexpectedly <i>pretty sweet</i>:
+</p>
+
+<figure>
+    <audio controls src="../resources/audio/intersection_music.ogg">
+            Your browser does not support the
+            <code>audio</code> element.
+    </audio>
+</figure>
+
+<p>
+The game ended up doing pretty well! 
+Out of 1353 entries, it got 62nd place for innovation, 87th for the use of the theme and 167th place overall.
+It also got some heartwarming comments from the players.
+At the time I was planning on making a polished version of it for Android and putting it on the Play Store.
+After spending some time on it, I was struggling to make it fun enough though, so I decided to drop that idea.
+The jam itself was more than worth it.
+</p>
+
+<figure>
+    <img src="photos/intersection/intersection_menu.jpg"/>
+    <figcaption>The menu</figcaption>
+</figure>
+
+    </main>
+
+    <footer>
+        <div id="copyright">
+            
+            <span id="copyright">Oskar Korošec © 2021</span>
+        </div>
+    </footer>
+</body>
+
+</html>
