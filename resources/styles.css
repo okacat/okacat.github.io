@@ -17,11 +17,16 @@ h1, h2, h3 {
 }
 
 figure {
-    margin: 0px;
+    margin-left: auto; 
+    margin-right: auto;
+    width: fit-content;
+    display: table;
 }
 
 figcaption {
     font-style: italic;
+    display: table-caption;
+    caption-side: bottom;
 }
 
 footer {
