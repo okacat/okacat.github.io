@@ -1,0 +1,71 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>okacat</title>
+    <meta name="description" content="a personal webpage of Oskar Korošec">
+    <meta name="author" content="Oskar Korošec">
+
+    <link rel="stylesheet" href="resources/normalize.css">
+    <link rel="stylesheet" href="resources/styles.css">
+    <link rel="stylesheet" href="resources/font-styles.css">
+</head>
+
+<body>
+    <header>
+        <div id="logo"><a href="index.html">okacat</a></div>
+    </header>
+
+    <main class=article>
+        <h1>This website</h1>
+
+<p>
+    There's a million different places on the internet to put your stuff on to.
+    But none of them last.
+    Sure, they are better connected, revolve around discovery, and algorithms, and friends, and likes, and comments, and
+    feedback.
+    But they are also annoying, and ever changing.
+    This website is a place to hold my stuff, in suspense.
+    It's mostly for my own sake for documenting the small things I sometimes build,
+    but just maybe it can offer some insight to others too. That'd be nice.
+</p>
+
+<figure>
+    <img src="photos/thiswebsite/thiswebsite.png" />
+    <figcaption>This website</figcaption>
+</figure>
+
+<p>
+    To prevent the website from rotting, I kept it as simple as possible.
+    It's a statically generated website, with no dependencies, or well, one dependency.
+    Writing image resizing from scratch wasn't a wheel I felt like reinventing,
+    it if ever flakes, it should be easy enough to replace.
+    I went with Go as that seemed reasonable enough.
+    It's a simple language to pick up, easy to run and hopefully supported for a while.
+    If I wanted to future proof it even more I could have gone for something older, like C for example.
+    Worst case I'll be porting Go to Java 36 in the retirement home, have something to do.
+</p>
+
+<p>
+    It's using a simple structure: a landing page with an index and two types of sub-pages, an article and a gallery.
+    The article is for text and images, like this page, and the gallery is for images only.
+    Each article is written in it's own file which is then inserted into the template during generation time.
+    Some handwritten CSS is used along with normalize.css to style it.
+    There's no JavaScript, the site is completely static.
+    And that's basically it.
+</p>
+    </main>
+
+    <footer>
+        <div id="copyright">
+            
+            <span id="copyright">Oskar Korošec © 2024</span>
+        </div>
+    </footer>
+</body>
+
+</html>
