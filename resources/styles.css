@@ -1,7 +1,10 @@
-html, body {
+html,
+body {
     max-width: 100%;
     min-height: 100%;
-    height: fit-content;
+    height: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 body {
@@ -10,14 +13,17 @@ body {
     color: #444;
     font-family: "Source Sans Pro", sans-serif;
     margin: 0;
+    overflow-y: auto;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     line-height: 1.2
 }
 
 figure {
-    margin-left: auto; 
+    margin-left: auto;
     margin-right: auto;
     width: fit-content;
     display: table;
@@ -39,7 +45,7 @@ footer {
 
 audio {
     margin-top: 20px;
-    margin-bottom: 20px;   
+    margin-bottom: 20px;
 }
 
 blockquote {
@@ -121,24 +127,16 @@ blockquote {
         margin-left: 20px;
         margin-top: 20px;
     }
-  }
+}
 
 #landing-body {
     display: flex;
     flex-direction: row;
     align-items: stretch;
     min-height: 100vh;
-}
-
-#landing-image {
-    flex: 1 1 0;
-}
-
-#landing-image>img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    position: relative;
 }
 
 #sidemenu {
@@ -147,6 +145,10 @@ blockquote {
     background-color: white;
     min-width: 320px;
     width: fit-content;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    z-index: 1;
 }
 
 #sidemenu>nav {
@@ -169,4 +171,26 @@ blockquote {
     #sidemenu {
         width: 100%;
     }
+
+    #landing-image {
+        display: none;
+    }
+}
+
+#landing-image {
+    flex: 1 1 0;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: calc(100% - 320px);
+}
+
+#landing-image>img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    display: block;
 }
