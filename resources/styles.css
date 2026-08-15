@@ -85,6 +85,18 @@ blockquote {
     font-style: italic;
 }
 
+.article-date {
+    font-size: 13px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #999;
+    margin-bottom: 4px;
+}
+
+.article-date + h1 {
+    margin-top: 0;
+}
+
 .nav-header {
     font-weight: bold;
     margin-top: 40px;
